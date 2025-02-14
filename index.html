@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title​>   FOR YOU 💘​💘​💘  </title>
+
+    <style> 
+    
+
+
+    </style>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body class="container bg-primary text-white text-center py-5">
+
+   
+    
+<img src="imagen/angelll.jpg.jpeg" alt="Descripción de la imagen" width="100%" height="auto" color="white">
+
+    <h1 class="display-1 fw-bold"> Will you be my Valentine?</h1> <br>
+    <audio controls autoplay>
+        <source src="mp3/telepatia.mp3" type="audio/mp3">
+        <br>
+        <br>
+
+    </audio> 
+
+    <div class="mt-5">
+    <button class="btn btn-light btn-lg" onclick="siquiere()"> 
+        SI, ACEPTO GUAPO 🥰​
+    </button>
+    <button class="btn btn-danger ms-2 btn-lg" onmouseenter="noquiere(event)"> 
+        Nooo 🤮​
+    </button>
+    
+    </div>
+    <script>
+function noquiere(evt){
+let target= evt.target;
+let maxWidth= window.innerWidth;
+let maxHeight= window.innerHeight;
+
+let randomWidth= getRandomInt(0, maxWidth - target.offsetWidth);
+let randomHeight= getRandomInt(0, maxHeight - target.offsetHeight);
+
+   target.style.position='absolute';
+   target.style.top= randomWidth + 'px' ;
+   target.style.left= randmHeight + 'px';
+}
+
+function siquiere(){
+    alert('FELICIDADES! Más rato te veo para darte todo mi cariño, demostrarte lo mucho que te quiero y lo que significas para mi loquita 💘 Gracias por ser esa personita tan especial en mi vida, a tu lado siempre lo tendré todo y sorry por la hora:) ​');
+}
+
+function getRandomInt(min, max){
+    return Math.floor (Math.random() * (max - min)) + min;
+}
+
+
+    </script>
+
+</body>
+
+</html>
